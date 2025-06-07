@@ -1,15 +1,10 @@
 import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Produtos from './containers/Produtos'
+import { Produto } from './types'
+
 
 import { GlobalStyle } from './styles'
-
-export type Produto = {
-  id: number
-  nome: string
-  preco: number
-  imagem: string
-}
 
 function App() {
   const [produtos, setProdutos] = useState<Produto[]>([])
